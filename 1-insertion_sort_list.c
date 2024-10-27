@@ -29,6 +29,7 @@ void insertion_sort_list(listint_t **list)
 			else
 				(*list) = temp;
 			temp->next->prev = temp;
+			print_list(*list);
 		}
 	}
 }
