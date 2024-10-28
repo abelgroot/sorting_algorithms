@@ -20,6 +20,8 @@ typedef struct listint_s
 
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
+
+/** bubble selection and quick sort */
 void bubble_sort(int *array, size_t size);
 void selection_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
@@ -32,5 +34,13 @@ void shell_sort(int *array, size_t size);
 int partition(int *array, int low, int high, size_t size);
 void quick_sort_helper(int *array, int low, int high, size_t size);
 void counting_sort_helper(int *array, size_t size, int *count);
+
+/** shell sort with */
+void shell_sort(int *array, size_t size);
+
+/** Merge Sort */
+void merge_sort(int *array, size_t size);
+void merge(int *array, int *left, int *right,
+		size_t left_size, size_t right_size);
 
 #endif /* SORT_H */
