@@ -36,6 +36,6 @@ void shell_sort(int *array, size_t size);
 
 /** Merge Sort */
 void merge_sort(int *array, size_t size);
-void merge(int *array, int *temp, int left, int mid, int right);
+void merge(int *array, int *left, int *right, size_t left_size, size_t right_size);
 
 #endif /* SORT_H */
