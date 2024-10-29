@@ -43,4 +43,10 @@ void merge_sort(int *array, size_t size);
 void merge(int *array, int *left, int *right,
 		size_t left_size, size_t right_size);
 
+/** cocktail sort */
+void cocktail_sort_list(listint_t **list);
+void swap_nodes(listint_t *node_a, listint_t *node_b);
+int forward_pass(listint_t **list, listint_t **current);
+int backward_pass(listint_t **list, listint_t **current);
+
 #endif /* SORT_H */
