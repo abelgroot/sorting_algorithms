@@ -49,4 +49,9 @@ void swap_nodes(listint_t *node_a, listint_t *node_b);
 int forward_pass(listint_t **list, listint_t **current);
 int backward_pass(listint_t **list, listint_t **current);
 
+/** heap sort */
+void heap_sort(int *array, size_t size);
+void heapify(int *array, size_t size);
+void sift_down(int *array, size_t size, size_t start, size_t end);
+
 #endif /* SORT_H */
